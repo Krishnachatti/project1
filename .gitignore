@@ -1,0 +1,55 @@
+
+---
+
+### `.gitignore`
+
+This file tells Git to ignore unnecessary files, keeping your repository clean.
+
+```gitignore
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE and editor configuration
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Build and distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# Log files
+*.log
+logs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Datasets and large audio files
+# These should not be tracked in Git.
+data/
+datasets/
+*.wav
+*.mp3
+*.csv
+
+# Trained models (optional - use Git LFS for large models)
+# If your models are large, add them here and host them elsewhere.
+models/
+*.h5
+*.pkl
+*.pth
